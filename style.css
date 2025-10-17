@@ -18,27 +18,27 @@
 }
 
 .hero-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900; /* Black */
 }
 
 .hero-button {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
 .about-subtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .about-subtext {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 .whatdo-title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -58,11 +58,12 @@
 }
 
 .foot-title {
-    font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .foot-address {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
