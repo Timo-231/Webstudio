@@ -3,6 +3,15 @@ body {
     font-weight: 500;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid red;
+}
+
 .web {
     color: #2196F3;
 }
@@ -24,6 +33,13 @@ body {
     color: #212121;
 }
 
+.header-link:hover {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+}
+
 .header-email {
     font-weight: 500;
     font-size: 14px;
@@ -36,6 +52,13 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+}
+
+.header-phone:hover {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
 }
 
 .hero-title {
@@ -112,28 +135,39 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    background: #2f303a;
+    background: #212121;
 }
 
 .foot-address {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: #fff;
-    background: #2f303a;
+    background-color: #212121;
 }
 
 .foot-email {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background: #2f303a;
+    color: rgba(255, 255, 255, 0.6); 
 }
 
 .foot-phone {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-button {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -142,31 +176,12 @@ body {
     background: #2f303a;
 }
 
-.portfolio-button-usi {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #fff;
+.portfolio-button:hover {
     border-radius: 4px;
     width: 73px;
     height: 38px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background: #2196f3;
-}
-
-.portfolio-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 162%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-    border-radius: 4px;
-    width: 125px;
-    height: 38px;
-    background: #f5f4fa;
 }
 
 .portfolio-subtitle {
