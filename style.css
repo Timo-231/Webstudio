@@ -19,6 +19,11 @@ body {
     color: #FFFFFF;
 }
 
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .header-title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -60,6 +65,11 @@ body {
     color: #2196f3;
 }
 
+.hero {
+    padding-top: 145px;
+    padding-bottom: 200px;
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -82,6 +92,11 @@ body {
     background: #2196f3;
 }
 
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .about-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -98,12 +113,22 @@ body {
     color: #757575;
 }
 
+.what-we-do {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .whatdo-title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title {
@@ -128,6 +153,11 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: #757575;
+}
+
+.foot {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .foot-title {
@@ -165,6 +195,11 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.portfolio-buttons {
+    padding-top: 94px;
+    padding-bottom: 8px;
+}
+
 .portfolio-button {
     font-family: var(--font-family);
     font-weight: 400;
@@ -181,6 +216,11 @@ body {
     height: 38px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background: #2196f3;
+}
+
+.portfolio-cards {
+    padding-top: 34px;
+    padding-bottom: 94p;
 }
 
 .portfolio-subtitle {
