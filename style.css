@@ -48,7 +48,14 @@ body {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: #757575;
+}
+
+.header-email:hover {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
 }
 
 .header-phone {
@@ -66,7 +73,7 @@ body {
 }
 
 .hero {
-    padding-top: 145px;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
@@ -168,6 +175,7 @@ body {
 }
 
 .foot-address {
+    font-style: normal;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -183,7 +191,7 @@ body {
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6); 
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .foot-phone {
@@ -216,11 +224,6 @@ body {
     height: 38px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background: #2196f3;
-}
-
-.portfolio-cards {
-    padding-top: 34px;
-    padding-bottom: 94p;
 }
 
 .portfolio-subtitle {
