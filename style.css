@@ -4,12 +4,15 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 
 .web {
     color: #2196F3;
@@ -20,8 +23,23 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .header-title {
@@ -73,8 +91,13 @@ body {
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background: #2F303A;
 }
 
 .hero-title {
@@ -85,7 +108,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    background: #2f303a;
 }
 
 .hero-button {
@@ -97,6 +119,10 @@ body {
     color: #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;
+    width: 216px;
+    height: 50px;
+    margin-left: 500px;
+    border-radius: 5px;
 }
 
 .about {
@@ -138,6 +164,29 @@ body {
     padding-bottom: 94px;
 }
 
+.about-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.whatdo-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -165,16 +214,20 @@ body {
 .foot {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #2F303A;
 }
 
 .foot-title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    background: #212121;
 }
 
 .foot-address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
     font-style: normal;
     font-family: var(--font-family);
     font-weight: 400;
@@ -182,7 +235,6 @@ body {
     line-height: 171%;
     letter-spacing: 0.03em;
     color: #fff;
-    background-color: #212121;
 }
 
 .foot-email {
@@ -203,27 +255,31 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.portfolio-buttons {
-    padding-top: 94px;
-    padding-bottom: 8px;
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    margin-top: 94px;
 }
 
 .portfolio-button {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background: #2f303a;
+    border-radius: 4px;
+    width: 112px;
+    height: 38px;
 }
 
 .portfolio-button:hover {
-    border-radius: 4px;
-    width: 73px;
-    height: 38px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background: #2196f3;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 94px; 
+    margin-top: 34px;
 }
 
 .portfolio-subtitle {
