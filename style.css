@@ -4,9 +4,6 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -23,10 +20,13 @@ body {
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .header-list {
@@ -34,12 +34,15 @@ body {
     flex-direction: row;
     gap: 50px;
     margin-left: 93px;
+    margin-right: 344px;
 }
 
 .header-nav {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    align-items: center;
+    margin-right: auto;
 }
 
 .header-title {
@@ -91,13 +94,17 @@ body {
 }
 
 .hero {
-    display: flex;
     justify-content: center;
     justify-content: space-between;
     align-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
     background: #2F303A;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-title {
@@ -167,6 +174,11 @@ body {
 .about-list {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+}
+
+.whatdo-list {
+    gap: 30px;
 }
 
 .whatdo-list {
@@ -184,7 +196,17 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+.team-list {
+    gap: 30px;
     margin-top: 50px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .team-title {
@@ -257,6 +279,7 @@ body {
 
 .portfolio-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
@@ -278,6 +301,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
     margin-bottom: 94px; 
     margin-top: 34px;
 }
