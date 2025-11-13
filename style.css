@@ -33,16 +33,19 @@ body {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-left: 93px;
     margin-right: 344px;
 }
 
 .header-nav {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
     align-items: center;
     margin-right: auto;
+    margin-left: 93px;
+}
+
+.header-contakts {
+    display: flex;
+    gap: 50px;
 }
 
 .header-title {
@@ -105,6 +108,7 @@ body {
 .hero-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hero-title {
@@ -115,6 +119,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    max-width: 696px;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -128,7 +134,6 @@ body {
     background: #2196f3;
     width: 216px;
     height: 50px;
-    margin-left: 500px;
     border-radius: 5px;
 }
 
@@ -143,6 +148,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-bottom: 10px;
 }
 
 .about-subtext {
@@ -154,7 +160,6 @@ body {
 }
 
 .what-we-do {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -169,6 +174,7 @@ body {
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 
 .about-list {
@@ -188,10 +194,6 @@ body {
     margin-top: 50px;
 }
 
-.team {
-    background-color: #F5F4FA;
-}
-
 .team-list {
     display: flex;
     flex-direction: row;
@@ -206,7 +208,7 @@ body {
 .team-item {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    background-color: #FFFFFF;
 }
 
 .team-title {
@@ -223,6 +225,8 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-subtext {
@@ -231,6 +235,7 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: #757575;
+    padding-bottom: 30px;
 }
 
 .foot {
@@ -282,8 +287,8 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    padding-top: 94px;
+
 }
 
 .portfolio-button {
@@ -297,13 +302,20 @@ body {
     background: #2196f3;
 }
 
+.portfolio-cards {
+    padding-top: 50px;
+}
+
+.cards-container {
+    padding-bottom: 20px;
+}
+
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 94px; 
-    margin-top: 34px;
 }
 
 .portfolio-subtitle {
@@ -312,6 +324,9 @@ body {
     line-height: 200%;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    padding-left: 24px;
 }
 
 .portfolio-subtext {
@@ -320,4 +335,6 @@ body {
     line-height: 187%;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
