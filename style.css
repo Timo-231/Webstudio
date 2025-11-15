@@ -135,6 +135,7 @@ body {
     width: 216px;
     height: 50px;
     border-radius: 5px;
+    
 }
 
 .about {
@@ -282,13 +283,15 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.portfolio-container {
+    padding-top: 94px;
+}
+
 .portfolio-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 8px;
-    padding-top: 94px;
-
 }
 
 .portfolio-button {
@@ -310,14 +313,16 @@ body {
     padding-bottom: 20px;
 }
 
+.cards-container {
+    padding-bottom: 94px;
+}
+
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    padding-bottom: 94px;
 }
-
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 18px;

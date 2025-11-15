@@ -12,3 +12,10 @@ a {
     text-decoration: 0;
 }
 
+.hero-button {
+    border: none;
+}
+
+.portfolio-button {
+    border: none;
+}
