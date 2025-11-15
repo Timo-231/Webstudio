@@ -315,7 +315,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 94px; 
+    padding-bottom: 94px;
 }
 
 .portfolio-subtitle {
