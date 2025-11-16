@@ -283,7 +283,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.portfolio-container {
+.portfolio-buttons {
     padding-top: 94px;
 }
 
@@ -303,17 +303,11 @@ body {
 .portfolio-button:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background: #2196f3;
+    color: #FFFFFF;
 }
 
 .portfolio-cards {
     padding-top: 50px;
-}
-
-.cards-container {
-    padding-bottom: 20px;
-}
-
-.cards-container {
     padding-bottom: 94px;
 }
 
