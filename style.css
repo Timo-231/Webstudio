@@ -306,17 +306,23 @@ body {
     color: #FFFFFF;
 }
 
-.portfolio-cards {
-    padding-top: 50px;
-    padding-bottom: 94px;
-}
-
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
 }
+
+.portfolio-item {
+    flex-basis: 100px;
+    flex-grow: calc((100% - 20px) / 3);
+}
+
+.portfolio-cards {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
 .portfolio-subtitle {
     font-weight: 700;
     font-size: 18px;
