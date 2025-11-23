@@ -135,7 +135,6 @@ body {
     width: 216px;
     height: 50px;
     border-radius: 5px;
-    
 }
 
 .about {
@@ -314,8 +313,7 @@ body {
 }
 
 .portfolio-item {
-    flex-basis: 100px;
-    flex-grow: calc((100% - 20px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-cards {
