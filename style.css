@@ -151,6 +151,58 @@ body {
     margin-bottom: 10px;
 }
 
+.uvaha::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./img/antenna1.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.punktualnist::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./img/clock1.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.plan::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./img/diagram1.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.technik::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./img/astronaut1.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
 .about-subtext {
     font-weight: 400;
     font-size: 14px;
