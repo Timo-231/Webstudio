@@ -102,7 +102,7 @@ body {
     align-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background: #2F303A;
+    background-image: url("./img/backround.webp");
 }
 
 .hero-container {
@@ -259,6 +259,8 @@ body {
 
 .team-item {
     display: flex;
+    width: 270px;
+    height: 368px;
     flex-direction: column;
     background-color: #FFFFFF;
 }
@@ -366,6 +368,7 @@ body {
 
 .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
+    outline: solid rgb(248, 248, 248);
 }
 
 .portfolio-cards {
