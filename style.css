@@ -9,7 +9,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 
 .web {
     color: #2196F3;
@@ -250,10 +250,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-.team-list {
-    gap: 30px;
     margin-top: 50px;
 }
 
@@ -263,6 +259,8 @@ body {
     height: 368px;
     flex-direction: column;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
 }
 
 .team-title {
