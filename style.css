@@ -373,6 +373,7 @@ body {
 .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
     background: #fff;
+    outline: solid 1px #EEEEEE;
 }
 
 .portfolio-item:hover {
