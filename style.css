@@ -103,7 +103,10 @@ body {
     align-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("./img/backround.webp");
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.6), 
+    rgba(47, 48, 58, 0.6)),
+    url("./img/backround.webp");
 }
 
 .hero-container {
