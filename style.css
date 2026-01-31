@@ -103,10 +103,9 @@ body {
     align-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(
-    rgba(47, 48, 58, 0.6), 
-    rgba(47, 48, 58, 0.6)),
-    url("./img/backround.webp");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.6),
+            rgba(47, 48, 58, 0.6)),
+        url("./img/backround.webp");
 }
 
 .hero-container {
@@ -260,12 +259,12 @@ body {
 .team-item {
     display: flex;
     width: 270px;
-    height: 368px;
+    height: 428px;
     flex-direction: column;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
 }
 
@@ -294,6 +293,58 @@ body {
     text-align: center;
     color: #757575;
     padding-bottom: 30px;
+}
+
+.team-elmnts {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-icon {
+    width: 15px;
+    height: 15px;
+    fill: #AFB1B8;
+}
+
+.team-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-link:hover {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+
+    .team-icon {
+        fill: #FFFFFF;
+    }
+}
+
+.clients-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.client-elmts {
+    display: flex;
+    justify-content: center;
+    gap: 127px;
+    padding-bottom: 110px;
+}
+
+.client-icon {
+    outline: solid 1px red;
+
 }
 
 .foot {
@@ -340,6 +391,26 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-elmnts {
+    display: flex;
+}
+
+.footer-elm {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-link {
+    display: flex;
+    background-color: gray;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
 .portfolio-buttons {
     padding-top: 94px;
 }
@@ -379,8 +450,8 @@ body {
 .portfolio-item:hover {
     flex-basis: calc((100% - 60px) / 3);
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
-    0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        0 4px 4px 0 rgba(0, 0, 0, 0.06),
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
     background: #fff;
 }
 
