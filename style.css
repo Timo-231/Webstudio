@@ -338,13 +338,31 @@ body {
 .client-elmts {
     display: flex;
     justify-content: center;
-    gap: 127px;
+    gap: 30px;
     padding-bottom: 110px;
 }
 
-.client-icon {
-    outline: solid 1px red;
+.client-elm {
+    outline: solid 3px #AFB1B8;
+    border-radius: 5px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.client-elm:hover {
+    outline: solid 3px #2196F3;
+    .client-icon {
+        fill: #2196F3;
+    }
+}
+
+.client-icon {
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
 }
 
 .foot {
@@ -391,18 +409,45 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-elmnts {
+.footer-icons {
     display: flex;
 }
 
-.footer-elm {
+.footer-elmnts {
     display: flex;
     gap: 10px;
 }
 
+.footer-elm {
+    display: flex;
+    background-color: #44454E;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.footer-elm:hover {
+    background-color: #2196F3;
+}
+
 .footer-link {
     display: flex;
-    background-color: gray;
+}
+
+.icons {
+    margin-left: 70px
+}
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 12px;
 }
 
 .footer-icon {
