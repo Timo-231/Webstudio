@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link
@@ -18,16 +18,32 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <p class="header-title"> <span class="web">Web</span>Studio</p>
+            <p class="header-title"><span class="web">Web</span>Studio</p>
             <nav class="header-nav">
                 <ul class="header-list">
-                    <li class="header-item"><a href="./index.html" class="header-link">Студiя</a></li>
-                    <li class="header-item"><a href="./portfolio.html" class="header-link">Портфолiо</a></li>
-                    <li class="header-item"><a href="" class="header-link">Контакти</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link" class="header-link-ho">Студiя</a>
+                    </li>
+                    <li class="header-item"><a href="./portfolio.html" class="header-link"
+                            class="header-link-ho">Портфолiо</a></li>
+                    <li class="header-item"><a href="" class="header-link" class="header-link-ho">Контакти</a></li>
                 </ul>
                 <ul class="header-contakts">
-                    <li><a href="mailto:info@devstudio.com" class="header-email" class="header-email-ho">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="header-phone" class="header-phone-ho">+38 096 111 11 11</a></li>
+                    <li class="header-contakt">
+                        <svg class="header-icons">
+                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </li>
+                    <li><a href="mailto:info@devstudio.com" class="header-email"
+                            class="header-email-ho">info@devstudio.com</a></li>
+                </ul>
+                <ul class="header-telefon">
+                    <li class="header-contact">
+                        <svg class="header-icon">
+                            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                    </li>
+                    <li><a href="tel:+380961111111" class="header-phone" class="header-phone-ho">+38 096 111 11 11</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -50,65 +66,90 @@
         <section class="portfolio-cards">
             <div class="container cards-container">
                 <ul class="portfolio-card">
-                        <li class="portfolio-item">
-                            <img src="./portfolio/laptop.webp" alt="laptop" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Технокряк</h3>
-                            <p class="portfolio-subtext">Веб-сайт</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/basketball.webp" alt="basketball" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h3>
-                            <p class="portfolio-subtext">Дизайн</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/fish.webp" alt="fish" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Ресторан Seafood</h3>
-                            <p class="portfolio-subtext">Додаток</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/headphones.webp" alt="headphones" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Проєкт Prime</h3>
-                            <p class="portfolio-subtext">Маркетинг</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/boxes.webp" alt="boxes" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Проєкт Boxes</h3>
-                            <p class="portfolio-subtext">Додаток</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/pc.webp" alt="pc" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Inspiration has no Borders</h3>
-                            <p class="portfolio-subtext">Веб-сайт</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/book.webp" alt="book" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Видання Limited Edition</h3>
-                            <p class="portfolio-subtext">Дизайн</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/birka.webp" alt="birka" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Проєкт LAB</h3>
-                            <p class="portfolio-subtext">Маркетинг</p>
-                        </li>
-                        <li class="portfolio-item">
-                            <img src="./portfolio/laptop2.webp" alt="laptop2" class="portfolio-images">
-                            <h3 class="portfolio-subtitle">Growing Business</h3>
-                            <p class="portfolio-subtext">Додаток</p>
-                        </li>
-                    </div>
-                </ul>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/laptop.webp" alt="laptop" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Технокряк</h3>
+                        <p class="portfolio-subtext">Веб-сайт</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/basketball.webp" alt="basketball" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h3>
+                        <p class="portfolio-subtext">Дизайн</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/fish.webp" alt="fish" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Ресторан Seafood</h3>
+                        <p class="portfolio-subtext">Додаток</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/headphones.webp" alt="headphones" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Проєкт Prime</h3>
+                        <p class="portfolio-subtext">Маркетинг</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/boxes.webp" alt="boxes" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Проєкт Boxes</h3>
+                        <p class="portfolio-subtext">Додаток</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/pc.webp" alt="pc" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Inspiration has no Borders</h3>
+                        <p class="portfolio-subtext">Веб-сайт</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/book.webp" alt="book" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Видання Limited Edition</h3>
+                        <p class="portfolio-subtext">Дизайн</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/birka.webp" alt="birka" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Проєкт LAB</h3>
+                        <p class="portfolio-subtext">Маркетинг</p>
+                    </li>
+                    <li class="portfolio-item">
+                        <img src="./portfolio/laptop2.webp" alt="laptop2" class="portfolio-images">
+                        <h3 class="portfolio-subtitle">Growing Business</h3>
+                        <p class="portfolio-subtext">Додаток</p>
+                    </li>
+            </div>
+            </ul>
             </div>
         </section>
     </main>
     <!-- porfolio footer -->
     <footer id="foot" class="foot">
         <div class="container">
-            <p class="foot-title"> <span class="web">Web</span><span class="studio">Studio</span></p>
-            <address class="foot-address">
-                м. Київ, пр-т Лесі Українки, 26
-                <a href="mailto:info@devstudio.com" class="foot-email">info@devstudio.com</a>
-                <a href="tel:+380961111111" class="foot-phone">+38 096 111 11 11</a>
-            </address>
+            <div class="footer-icons">
+                <div class="adress">
+                    <p class="foot-title"><span class="web">Web</span><span class="studio">Studio</span></p>
+                    <address class="foot-address">
+                        м. Київ, пр-т Лесі Українки, 26
+                        <a href="mailto:info@devstudio.com" class="foot-email">info@devstudio.com</a>
+                        <a href="tel:+380961111111" class="foot-phone">+38 096 111 11 11</a>
+                    </address>
+                </div>
+                <div class="icons">
+                    <h3 class="join">приєднуйтесь</h3>
+                    <ul class="footer-elmnts">
+                        <li class="footer-elm"><a href="" class="footer-link"><svg class="footer-icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+                        <li class="footer-elm"><a href="" class="footer-link"><svg class="footer-icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a>
+                        </li>
+                        <li class="footer-elm"><a href="" class="footer-link"><svg class="footer-icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a>
+                        </li>
+                        <li class="footer-elm"><a href="" class="footer-link"><svg class="footer-icon">
+                                    <use href="./img/symbol-defs.svg#icon-in"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

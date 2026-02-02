@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-right: 344px;
+    margin-right: 318px;
 }
 
 .header-nav {
@@ -46,7 +46,27 @@ body {
 
 .header-contakts {
     display: flex;
-    gap: 50px;
+    margin-right: 30px;
+    gap: 10px;
+}
+
+.header-contakts:hover {
+    color: #2196F3;
+    .header-icons {
+        fill: #2196F3;
+    }
+}
+
+.header-telefon {
+    display: flex;
+    gap: 10px;
+}
+
+.header-telefon:hover {
+    color: #2196F3;
+    .header-icon {
+        fill: #2196F3;
+    }
 }
 
 .header-title {
@@ -63,9 +83,14 @@ body {
 }
 
 .header-icons {
-    outline: solid 1px red;
     width: 16px;
     height: 12px;
+}
+
+
+.header-icon {
+    width: 10px;
+    height: 16px;
 }
 
 .header-link:hover {
@@ -94,6 +119,11 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+}
+
+.header-contact{
+    width: 16px;
+    height: 12px;
 }
 
 .header-phone:hover {
@@ -265,7 +295,6 @@ body {
 .team-item {
     display: flex;
     width: 270px;
-    height: 428px;
     flex-direction: column;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
@@ -298,24 +327,25 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: #757575;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .team-elmnts {
     display: flex;
     gap: 10px;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .team-icon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     fill: #AFB1B8;
 }
 
 .team-link {
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -349,7 +379,7 @@ body {
 }
 
 .client-elm {
-    outline: solid 3px #AFB1B8;
+    outline: solid 1px #AFB1B8;
     border-radius: 5px;
     width: 170px;
     height: 92px;
@@ -359,7 +389,7 @@ body {
 }
 
 .client-elm:hover {
-    outline: solid 3px #2196F3;
+    outline: solid 1px #2196F3;
     .client-icon {
         fill: #2196F3;
     }
@@ -417,6 +447,7 @@ body {
 
 .footer-icons {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-elmnts {
@@ -453,7 +484,6 @@ body {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 20px;
-    padding-top: 12px;
 }
 
 .footer-icon {
