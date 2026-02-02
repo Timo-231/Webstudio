@@ -62,6 +62,12 @@ body {
     color: #212121;
 }
 
+.header-icons {
+    outline: solid 1px red;
+    width: 16px;
+    height: 12px;
+}
+
 .header-link:hover {
     font-weight: 500;
     font-size: 14px;
