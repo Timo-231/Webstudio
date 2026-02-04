@@ -311,13 +311,17 @@ body {
     color: #212121;
 }
 
+.team-info {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-subtitle {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -334,7 +338,6 @@ body {
     display: flex;
     gap: 10px;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 .team-icon {
@@ -361,8 +364,12 @@ body {
     }
 }
 
-.clients-title {
+.clients {
     padding-top: 94px;
+    padding-bottom: 110px;
+}
+
+.clients-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -375,7 +382,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 110px;
 }
 
 .client-elm {
