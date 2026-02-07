@@ -73,6 +73,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
+    color: #000;
 }
 
 .header-link {
@@ -121,9 +122,19 @@ body {
     color: #757575;
 }
 
-.header-contact{
+.header-contact {
     width: 16px;
     height: 12px;
+}
+
+.header-contakts {
+    display: flex;
+    align-items: center;
+}
+
+.header-telefon {
+    display: flex;
+    align-items: center;
 }
 
 .header-phone:hover {
