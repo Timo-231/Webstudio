@@ -52,6 +52,7 @@ body {
 
 .header-contakts:hover {
     color: #2196F3;
+
     .header-icons {
         fill: #2196F3;
     }
@@ -64,6 +65,7 @@ body {
 
 .header-telefon:hover {
     color: #2196F3;
+
     .header-icon {
         fill: #2196F3;
     }
@@ -261,6 +263,12 @@ body {
     color: #757575;
 }
 
+.about-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
 .what-we-do {
     padding-bottom: 94px;
 }
@@ -273,27 +281,37 @@ body {
     color: #212121;
 }
 
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA;
-}
-
-.about-list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
 .whatdo-list {
     gap: 30px;
-}
-
-.whatdo-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
     margin-top: 50px;
+}
+
+.whatdo-item {
+    position: relative;
+}
+
+.whatdo-text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #2f303ac5;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 
 .team-list {
@@ -407,6 +425,7 @@ body {
 
 .client-elm:hover {
     outline: solid 1px #2196F3;
+
     .client-icon {
         fill: #2196F3;
     }
