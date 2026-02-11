@@ -51,8 +51,9 @@ body {
 }
 
 .header-contakts:hover {
-    color: #2196F3;
-
+    .header-email {
+        color: #2196F3;
+    }
     .header-icons {
         fill: #2196F3;
     }
@@ -64,8 +65,9 @@ body {
 }
 
 .header-telefon:hover {
-    color: #2196F3;
-
+    .header-phone {
+        color: #2196F3;
+    }
     .header-icon {
         fill: #2196F3;
     }
@@ -88,6 +90,14 @@ body {
 .header-icons {
     width: 16px;
     height: 12px;
+}
+
+.header-icons:hover {
+    fill: black;
+    
+    .header-email {
+        color: #2196F3;
+    }
 }
 
 
