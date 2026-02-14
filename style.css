@@ -24,17 +24,17 @@ body {
 }
 
 .model-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  outline: 1px solid grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .model-icon {
@@ -43,10 +43,10 @@ body {
     fill: grey;
 }
 
-.model-butn:hover {
-  .model-icon {
-    fill: #2196f3;
-  }
+.model-btn:hover {
+    .model-icon {
+        fill: #2196f3;
+    }
 }
 
 .model-form {
@@ -79,7 +79,8 @@ body {
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 18px;
+    top: 0;
+    left: 12px;
 }
 
 .model-input {
@@ -88,7 +89,19 @@ body {
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
-    padding-left: 12px;
+    padding-left: 42px;
+}
+
+
+.model-input:hover,
+.model-input:focus
+{
+   outline: 1px solid #2196f3;
+}
+
+.model-input:hover + .model-pic,
+.model-input:focus + .model-pic{
+  fill: #2196f3;
 }
 
 .model-comment {
