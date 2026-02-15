@@ -53,7 +53,8 @@
         <section id="sec1" class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">ЕФЕКТИВНI РIШЕННЯ ДЛЯ ВАШОГО БIЗНЕСУ</h1>
-                <button type="button" class="hero-button" class="hero-button-ho">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open class="hero-button-ho">Замовити
+                    послугу</button>
             </div>
         </section>
         <!-- about us -->
@@ -295,44 +296,60 @@
                         </li>
                     </ul>
                 </div>
+                <div class="send">
+                    <form action="">
+                        <label for="" class="footer-label">
+                            <h3 class="footer-follow">Підпишіться на розсилку</h3>
+                            <div class="footer-send">
+                                <input type="text" class="footer-input" placeholder="E-mail">
+                                <button type="submit" class="footer-btn">Підписатися
+                                    <svg class="footer-svg">
+                                        <use href="./img/symbol-defs.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </label>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="model">
-            <button class="model-btn" type="button"><svg class="model-icon">
-                <use href="./img/symbol-defs.svg#icon-cross"></use>
-            </svg></button>
+            <button class="model-btn" data-modal-close type="button"><svg class="model-icon">
+                    <use href="./img/symbol-defs.svg#icon-cross"></use>
+                </svg></button>
             <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="model-form">
                 <h3 class="model-text">Ім'я</h3>
                 <label class="model-label">
-                    <input type="text" class="model-input">
+                    <input type="text" minlength="2" required class="model-input">
                     <svg class="model-pic">
                         <use href="./img/symbol-defs.svg#icon-email2"></use>
                     </svg>
                 </label>
                 <h3 class="model-text">Телефон</h3>
                 <label class="model-label">
-                    <input type="text" class="model-input">
+                    <input type="tel" minlength="17" pattern="^\+38\s0\d{2}\s\d{3}\s\d{2}\s\d{2}$"
+                        placeholder="+38 090 136 34 63" required class="model-input">
                     <svg class="model-pic">
                         <use href="./img/symbol-defs.svg#icon-phone"></use>
                     </svg>
                 </label>
                 <h3 class="model-text">Пошта</h3>
                 <label class="model-label">
-                    <input type="text" class="model-input">
+                    <input type="email" minlength="10" required class="model-input">
                     <svg class="model-pic">
                         <use href="./img/symbol-defs.svg#icon-person"></use>
                     </svg>
                 </label>
                 <h3 class="model-text">Коментар</h3>
                 <label class="model-label">
-                    <textarea class="model-comment" placeholder="Введіть текст"></textarea>
+                    <textarea class="model-comment" maxlength="250" placeholder="Введіть текст"></textarea>
                 </label>
                 <div class="model-button">
                     <div class="model-box">
-                        <input class="model-check" type="checkbox">
+                        <input class="model-check" type="checkbox" required>
                         <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
                         <a class="model-link" href="">Умови договору</a>
                     </div>
@@ -341,7 +358,7 @@
             </form>
         </div>
     </div>
-
+    <script src="./model.js"></script>
 </body>
 
 </html
