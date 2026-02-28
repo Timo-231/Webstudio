@@ -195,6 +195,10 @@ body {
     position: relative;
 }
 
+.studios {
+    color: #2196f3;
+}
+
 .studios::after {
     content: "";
     display: block;
@@ -206,7 +210,7 @@ body {
     background-color: #2196f3;
 }
 
-.studios-p:hover:after {
+.studios-p::after {
     content: "";
     display: block;
     position: absolute;
@@ -215,9 +219,17 @@ body {
     height: 4px;
     top: 45px;
     background-color: #2196f3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-s:hover::after {
+.studios-p:hover::after {
+    opacity: 1;
+}
+
+.portfolio-s::after {
     content: "";
     display: block;
     position: absolute;
@@ -225,6 +237,14 @@ body {
     height: 4px;
     top: 45px;
     background-color: #2196f3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-s:hover::after {
+    opacity: 1;
 }
 
 .portfolio::after {
@@ -239,7 +259,7 @@ body {
 }
 
 
-.contacts-s:hover::after {
+.contacts-s::after {
     content: "";
     display: block;
     position: absolute;
@@ -248,17 +268,33 @@ body {
     height: 4px;
     top: 45px;
     background-color: #2196f3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-s:hover::after {
+    opacity: 1;
+}
+
+.contacts-p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    background-color: #2196f3;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-p:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background-color: #2196f3;
+    opacity: 1;
 }
 
 .header-container {
@@ -284,6 +320,9 @@ body {
     display: flex;
     margin-right: 30px;
     gap: 10px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contakts:hover {
@@ -299,6 +338,9 @@ body {
 .header-telefon {
     display: flex;
     gap: 10px;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-telefon:hover {
@@ -323,6 +365,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icons {
@@ -356,6 +401,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email:hover {
@@ -370,6 +418,9 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -630,6 +681,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover {
@@ -669,6 +723,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-elm:hover {
@@ -683,6 +740,9 @@ body {
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot {
@@ -747,6 +807,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-elm:hover {
@@ -850,6 +913,9 @@ body {
     border-radius: 4px;
     width: 112px;
     height: 38px;
+    transition-property: box-shadow, background, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover {
@@ -860,6 +926,9 @@ body {
 
 .portfolio-item {
     position: relative;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -889,6 +958,9 @@ body {
     background: rgba(33, 150, 243, 0.9);
     width: 100%;
     height: 294px;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
