@@ -945,21 +945,9 @@ body {
 }
 
 .portfolio-text {
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.portfolio-text {
-    opacity: 0;
     position: absolute;
+    opacity: 0;
+    transform: translate(0%, 100%);
     font-weight: 400;
     font-size: 18px;
     line-height: 156%;
@@ -971,9 +959,16 @@ body {
     background: rgba(33, 150, 243, 0.9);
     width: 100%;
     height: 294px;
-    transition-property: opacity;
+    transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .portfolio-item {
@@ -981,7 +976,7 @@ body {
     background: #fff;
     outline: solid 1px #EEEEEE;
     position: relative;
-    transition-property: box-shadow, background;
+    transition-property: box-shadow, background, transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -992,8 +987,9 @@ body {
         0 4px 4px 0 rgba(0, 0, 0, 0.06),
         0 1px 1px 0 rgba(0, 0, 0, 0.12);
     background: #fff;
-        .portfolio-text {
+    .portfolio-text {
         opacity: 1;
+        transform: translate(0%, 0%);
     }
 }
 
