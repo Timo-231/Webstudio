@@ -15,18 +15,28 @@ body {
 
 .is-hidden {
     opacity: 0;
+    transition-property: scale;
     pointer-events: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model {
-    width: 528px;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
+  width: 528px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  padding: 40px;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden > .model {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .model-btn {
@@ -944,6 +954,11 @@ body {
     color: #FFFFFF;
 }
 
+.portfolio-info {
+    overflow: hidden;
+    position: relative;
+}
+
 .portfolio-text {
     position: absolute;
     opacity: 0;
@@ -975,7 +990,6 @@ body {
     flex-basis: calc((100% - 60px) / 3);
     background: #fff;
     outline: solid 1px #EEEEEE;
-    position: relative;
     transition-property: box-shadow, background, transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
