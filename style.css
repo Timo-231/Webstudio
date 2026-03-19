@@ -596,6 +596,20 @@ body {
     padding-bottom: 94px;
 }
 
+@keyframes zoom {
+    0% {
+        
+    }
+
+    50% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
 .whatdo-title {
     font-weight: 700;
     font-size: 36px;
@@ -615,6 +629,12 @@ body {
 .whatdo-item {
     position: relative;
 }
+
+.whatdo-item:hover {
+    animation-name: zoom;
+    animation-duration: 1000ms;
+}
+
 
 .whatdo-text {
     font-weight: 700;
