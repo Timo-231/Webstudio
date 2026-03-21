@@ -596,20 +596,6 @@ body {
     padding-bottom: 94px;
 }
 
-@keyframes zoom {
-    0% {
-        
-    }
-
-    50% {
-        
-    }
-
-    100% {
-        
-    }
-}
-
 .whatdo-title {
     font-weight: 700;
     font-size: 36px;
@@ -1007,6 +993,7 @@ body {
 }
 
 .portfolio-item {
+    animation-name: zoom;
     flex-basis: calc((100% - 60px) / 3);
     background: #fff;
     outline: solid 1px #EEEEEE;
@@ -1024,6 +1011,20 @@ body {
     .portfolio-text {
         opacity: 1;
         transform: translate(0%, 0%);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(2);
     }
 }
 
