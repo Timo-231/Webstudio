@@ -1,0 +1,49 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 110px;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.client-elmts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-elm {
+    outline: solid 1px #AFB1B8;
+    border-radius: 5px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-elm:hover {
+    outline: solid 1px #2196F3;
+
+    .client-icon {
+        fill: #2196F3;
+    }
+}
+
+.client-icon {
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

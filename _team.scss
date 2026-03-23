@@ -1,0 +1,93 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-item {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.team-info {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.team-subtext {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 16px;
+}
+
+.team-elmnts {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.team-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+
+    .team-icon {
+        fill: #FFFFFF;
+    }
+}

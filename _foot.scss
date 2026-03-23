@@ -1,0 +1,152 @@
+.foot {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.foot-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.foot-address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+    font-style: normal;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.foot-email {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-phone {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-icons {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-elmnts {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-elm {
+    display: flex;
+    background-color: #44454E;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-elm:hover {
+    background-color: #2196F3;
+}
+
+.footer-link {
+    display: flex;
+}
+
+.footer-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(33, 150, 243, 0);
+    padding-left: 16px;
+}
+
+.send {
+    margin-left: 93px;
+}
+
+.footer-btn {
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #2196f3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    text-align: justify;
+    padding-left: 28px;
+}
+
+.footer-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-send {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.footer-follow {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-svg {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    right: 28px;
+}
+
+.icons {
+    margin-left: 70px
+}
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}

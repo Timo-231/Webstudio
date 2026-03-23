@@ -1,0 +1,45 @@
+
+.what-we-do {
+    padding-bottom: 94px;
+}
+
+.whatdo-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+.whatdo-list {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.whatdo-item {
+    position: relative;
+}
+
+.whatdo-item:hover {
+    animation-name: zoom;
+    animation-duration: 1000ms;
+}
+
+
+.whatdo-text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #2f303ac5;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+}
