@@ -8,7 +8,7 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $title-color;
 }
 
 .whatdo-list {
@@ -35,8 +35,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
-    background-color: #2f303ac5;
+    color: $main-color;
+    background-color: $footer-bg;
     padding-top: 27px;
     padding-bottom: 27px;
     position: absolute;

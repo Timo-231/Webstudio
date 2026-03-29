@@ -1,6 +1,6 @@
 .backdrop {
     opacity: 1;
-    background-color: #0c070879;
+    background-color: $backdrop;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
 
 .model {
   width: 528px;
-  background-color: #fff;
+  background-color: $main-color;
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -39,7 +39,7 @@
     height: 40px;
     border-radius: 50%;
     border: none;
-    outline: 1px solid grey;
+    outline: 1px solid $footer-contact;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
 .model-icon {
     width: 20px;
     height: 20px;
-    fill: grey;
+    fill: $footer-contact;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,7 +60,7 @@
 
 .model-btn:hover {
     .model-icon {
-        fill: #2196f3;
+        fill: $accent-color;
     }
 }
 
@@ -73,14 +73,14 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $title-color;
 }
 
 .model-text {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $text-color;
 }
 
 .model-label {
@@ -99,7 +99,7 @@
 }
 
 .model-input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $model-input;
     border-radius: 4px;
     width: 448px;
     height: 40px;
@@ -113,12 +113,12 @@
 
 .model-input:hover,
 .model-input:focus {
-    outline: 1px solid #2196f3;
+    outline: 1px solid $accent-color;
 }
 
 .model-input:hover+.model-pic,
 .model-input:focus+.model-pic {
-    fill: #2196f3;
+    fill: $accent-color;
 }
 
 .model-comment {
@@ -127,7 +127,7 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: $model-comment;
     padding-left: 16px;
     padding-top: 12px;
     resize: none;
@@ -152,13 +152,13 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $text-color;
 }
 
 .model-link {
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #2196f3;
+    color: $accent-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -172,10 +172,10 @@
     line-height: 188%;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: $main-color;
     border-radius: 4px;
     width: 200px;
     height: 50px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #188ce8;
+    box-shadow: 0 4px 4px 0 $input-shadow;
+    background: $model-submit;
 }

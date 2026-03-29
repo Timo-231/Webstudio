@@ -1,7 +1,7 @@
 .foot {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #2F303A;
+    background-color: $footer-bg;
 }
 
 .foot-title {
@@ -21,7 +21,7 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: $main-color;
 }
 
 .foot-email {
@@ -30,7 +30,7 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-contact;
 }
 
 .foot-phone {
@@ -39,7 +39,7 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-contact;
 }
 
 .footer-icons {
@@ -54,7 +54,7 @@
 
 .footer-elm {
     display: flex;
-    background-color: #44454E;
+    background-color: $footer-bg;
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -66,7 +66,7 @@
 }
 
 .footer-elm:hover {
-    background-color: #2196F3;
+    background-color: $accent-color;
 }
 
 .footer-link {
@@ -74,12 +74,12 @@
 }
 
 .footer-input {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $footer-input;
     border-radius: 4px;
     width: 358px;
     height: 50px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: rgba(33, 150, 243, 0);
+    box-shadow: $input-shadow;
+    background: $footer-input;
     padding-left: 16px;
 }
 
@@ -91,14 +91,14 @@
     border-radius: 4px;
     width: 200px;
     height: 50px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #2196f3;
+    box-shadow: 0 4px 4px 0 $input-shadow;
+    background: $accent-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 188%;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: $main-color;
     position: relative;
     text-align: justify;
     padding-left: 28px;
@@ -121,7 +121,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: $main-color;
 }
 
 .footer-svg {
@@ -141,12 +141,12 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: $main-color;
     margin-bottom: 20px;
 }
 
 .footer-icon {
     width: 22px;
     height: 22px;
-    fill: white;
+    fill: $main-color;
 }
