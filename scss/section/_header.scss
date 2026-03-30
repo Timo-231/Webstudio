@@ -1,11 +1,3 @@
-.web {
-    color: $accent-color;
-}
-
-.studio {
-    color: $main-color;
-}
-
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -18,97 +10,85 @@
         color: #000;
     }
 
-}
+    &__studio {
+        color: $main-color;
 
-.header-item {
-    display: flex;
-    position: relative;
-}
+        &__web {
+            color: $accent-color;
+        }
 
-.studios {
-    color: $accent-color;
-}
+    }
 
-.studios::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background-color: $accent-color;
-}
+    &__item {
+        display: flex;
+        position: relative;
+    }
 
-.studios-p::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background-color: $accent-color;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__studios {
+        color: $accent-color;
+    }
 
-.studios-p:hover::after {
-    opacity: 1;
-}
-
-.portfolio-s::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 72px;
-    height: 4px;
-    top: 45px;
-    background-color: $accent-color;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-s:hover::after {
-    opacity: 1;
-}
-
-.portfolio::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background-color: $accent-color;
-}
+    &__studios::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+    }
 
 
-.contacts-s::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background-color: $accent-color;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__studios-p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.contacts-s:hover::after {
-    opacity: 1;
-}
+    &__studios-p:hover::after {
+        opacity: 1;
+    }
 
-.contacts-p::after {
+    &__portfolio-s::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 72px;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__portfolio-s:hover::after {
+        opacity: 1;
+    }
+
+    &__portfolio::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+    }
+
+    &__contacts-s::after {
     content: "";
     display: block;
     position: absolute;
@@ -123,30 +103,49 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-p:hover::after {
+    &__contacts-s:hover::after {
     opacity: 1;
 }
 
-.header-container {
+    &__contacts-p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    background-color: $accent-color;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__contacts-p:hover::after {
+    opacity: 1;
+}
+
+    &__header-container {
     display: flex;
     flex-direction: row;
 }
 
-.header-list {
+    &__header-list {
     display: flex;
     flex-direction: row;
     gap: 50px;
     margin-right: 318px;
 }
 
-.header-nav {
+    &__header-nav {
     display: flex;
     align-items: center;
     margin-right: auto;
     margin-left: 93px;
 }
 
-.header-contakts {
+    &__header-contakts {
     display: flex;
     margin-right: 30px;
     gap: 10px;
@@ -155,7 +154,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contakts:hover {
+    &__header-contakts:hover {
     .header-email {
         color: $accent-color;
     }
@@ -165,14 +164,14 @@
     }
 }
 
-
-
-.header-telefon {
+    &__header-telefon {
     display: flex;
     gap: 10px;
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 }
 
 .header-telefon:hover {
