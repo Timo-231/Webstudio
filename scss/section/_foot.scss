@@ -1,152 +1,154 @@
+@use "../base/variable" as *;
+
 .foot {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footer-bg;
-}
 
-.foot-title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-}
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
 
-.foot-address {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    margin-top: 20px;
-    font-style: normal;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $main-color;
-}
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 20px;
+        font-style: normal;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $main-color;
+    }
 
-.foot-email {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $footer-contact;
-}
+    &__btn {
+        border-radius: 4px;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0 4px 4px 0 $input-shadow;
+        background: $accent-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 188%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $main-color;
+        position: relative;
+        text-align: justify;
+        padding-left: 28px;
+    }
 
-.foot-phone {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $footer-contact;
-}
+    &__label {
+        display: flex;
+        flex-direction: column;
+    }
 
-.footer-icons {
-    display: flex;
-    align-items: baseline;
-}
+    &__send {
+        display: flex;
+        margin-top: 20px;
+        gap: 12px;
+    }
 
-.footer-elmnts {
-    display: flex;
-    gap: 10px;
-}
+    &__follow {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+    }
 
-.footer-elm {
-    display: flex;
-    background-color: $footer-bg;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__svg {
+        position: absolute;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        right: 28px;
+    }
 
-.footer-elm:hover {
-    background-color: $accent-color;
-}
+    &__email {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $footer-contact;
+    }
 
-.footer-link {
-    display: flex;
-}
+    &__phone {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $footer-contact;
+    }
 
-.footer-input {
-    border: 1px solid $footer-input;
-    border-radius: 4px;
-    width: 358px;
-    height: 50px;
-    box-shadow: $input-shadow;
-    background: $footer-input;
-    padding-left: 16px;
-}
+    &__icons {
+        display: flex;
+        align-items: baseline;
+    }
 
-.send {
-    margin-left: 93px;
-}
+    &__elmnts {
+        display: flex;
+        gap: 10px;
+    }
 
-.footer-btn {
-    border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0 4px 4px 0 $input-shadow;
-    background: $accent-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 188%;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: $main-color;
-    position: relative;
-    text-align: justify;
-    padding-left: 28px;
-}
+    &__elm {
+        display: flex;
+        background-color: $footer-bg;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.footer-label {
-    display: flex;
-    flex-direction: column;
-}
+    &__elm:hover {
+        background-color: $accent-color;
+    }
 
-.footer-send {
-    display: flex;
-    margin-top: 20px;
-    gap: 12px;
-}
+    &__link {
+        display: flex;
+    }
 
-.footer-follow {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-color;
-}
+    &__input {
+        border: 1px solid $footer-input;
+        border-radius: 4px;
+        width: 358px;
+        height: 50px;
+        box-shadow: $input-shadow;
+        background: $footer-input;
+        padding-left: 16px;
+    }
 
-.footer-svg {
-    position: absolute;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    right: 28px;
-}
+    &__send {
+        margin-left: 93px;
+    }
 
-.icons {
-    margin-left: 70px
-}
+    &__icons {
+        margin-left: 70px
+    }
 
-.join {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-color;
-    margin-bottom: 20px;
-}
+    &__join {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 20px;
+    }
 
-.footer-icon {
-    width: 22px;
-    height: 22px;
-    fill: $main-color;
+    &__icon {
+        width: 22px;
+        height: 22px;
+        fill: $main-color;
+    }
 }

@@ -1,3 +1,5 @@
+@use "../base/variable" as *;
+
 .backdrop {
     opacity: 1;
     background-color: $backdrop;
