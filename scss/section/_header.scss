@@ -224,6 +224,101 @@
         opacity: 1;
     }
 
+    .portfolio-s::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 72px;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .portfolio-s:hover::after {
+        opacity: 1;
+    }
+
+    .portfolio::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+    }
+
+    .portfolio-info {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .portfolio-text {
+        position: absolute;
+        opacity: 0;
+        transform: translate(0%, 100%);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        top: 0;
+        left: 0;
+        padding: 40px;
+        background: $card-owerlay;
+        width: 100%;
+        height: 294px;
+        transition-property: opacity, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+
+    &__studios-p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__studios-p:hover::after {
+        opacity: 1;
+    }
+
+    &__contacts-p::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        top: 45px;
+        background-color: $accent-color;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__contacts-p:hover::after {
+        opacity: 1;
+    }
+
+
     &__header-nav {
         display: flex;
         align-items: center;

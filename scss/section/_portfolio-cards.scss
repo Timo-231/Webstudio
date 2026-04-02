@@ -1,95 +1,102 @@
 @use "../base/variable" as *;
 
-.portfolio-info {
-    overflow: hidden;
-    position: relative;
-}
-
-.portfolio-text {
-    position: absolute;
-    opacity: 0;
-    transform: translate(0%, 100%);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: $main-color;
-    top: 0;
-    left: 0;
-    padding: 40px;
-    background: $card-owerlay;
+.cards {
     width: 100%;
-    height: 294px;
-    transition-property: opacity, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.portfolio-item {
-    animation-name: zoom;
-    flex-basis: calc((100% - 60px) / 3);
-    background: $main-color;
-    outline: solid 1px $border-card;
-    transition-property: box-shadow, background, transform, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover {
-    flex-basis: calc((100% - 60px) / 3);
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
-        0 4px 4px 0 rgba(0, 0, 0, 0.06),
-        0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    background: $main-color;
-    .portfolio-text {
-        opacity: 1;
-        transform: translate(0%, 0%);
-    }
-}
-
-@keyframes zoom {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(2);
-    }
-}
-
-.portfolio-cards {
     padding-top: 50px;
     padding-bottom: 94px;
-}
 
-.portfolio-subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 200%;
-    letter-spacing: 0.06em;
-    color: $title-color;
-    margin-bottom: 4px;
-    margin-top: 20px;
-    padding-left: 24px;
-}
+    &__info {
+        overflow: hidden;
+        position: relative;
+    }
 
-.portfolio-subtext {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 187%;
-    letter-spacing: 0.03em;
-    color: $text-color;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    &__text {
+        position: absolute;
+        opacity: 0;
+        transform: translate(0%, 100%);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        top: 0;
+        left: 0;
+        padding: 40px;
+        background: $card-owerlay;
+        width: 100%;
+        height: 294px;
+        transition-property: opacity, transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        animation-name: zoom;
+        flex-basis: calc((100% - 60px) / 3);
+        background: $main-color;
+        outline: solid 1px $border-card;
+        transition-property: box-shadow, background, transform, opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover {
+        flex-basis: calc((100% - 60px) / 3);
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+            0 4px 4px 0 rgba(0, 0, 0, 0.06),
+            0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        background: $main-color;
+
+        &__text {
+            opacity: 1;
+            transform: translate(0%, 0%);
+        }
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(2);
+        }
+    }
+
+    &__cards {
+        padding-top: 50px;
+        padding-bottom: 94px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 200%;
+        letter-spacing: 0.06em;
+        color: $title-color;
+        margin-bottom: 4px;
+        margin-top: 20px;
+        padding-left: 24px;
+    }
+
+    &__subtext {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.03em;
+        color: $text-color;
+        padding-bottom: 20px;
+        padding-left: 24px;
+    }
 }

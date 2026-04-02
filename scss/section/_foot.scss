@@ -25,70 +25,7 @@
         color: $main-color;
     }
 
-    &__btn {
-        border-radius: 4px;
-        width: 200px;
-        height: 50px;
-        box-shadow: 0 4px 4px 0 $input-shadow;
-        background: $accent-color;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 188%;
-        letter-spacing: 0.06em;
-        text-align: center;
-        color: $main-color;
-        position: relative;
-        text-align: justify;
-        padding-left: 28px;
-    }
-
-    &__label {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__send {
-        display: flex;
-        margin-top: 20px;
-        gap: 12px;
-    }
-
-    &__follow {
-        display: block;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $main-color;
-    }
-
-    &__svg {
-        position: absolute;
-        right: 10px;
-        width: 24px;
-        height: 24px;
-        right: 28px;
-    }
-
-    &__email {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: $footer-contact;
-    }
-
-    &__phone {
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: $footer-contact;
-    }
-
-    &__icons {
+    &__contain {
         display: flex;
         align-items: baseline;
     }
@@ -119,6 +56,77 @@
         display: flex;
     }
 
+    &__send {
+        margin-left: 93px;
+    }
+
+    &__icons {
+        margin-left: 70px
+    }
+
+    &__send {
+        display: flex;
+        margin-top: 20px;
+        gap: 12px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__follow {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    &__btn {
+        border-radius: 4px;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0 4px 4px 0 $input-shadow;
+        background: $accent-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 188%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $main-color;
+        position: relative;
+        text-align: justify;
+        padding-left: 28px;
+    }
+
+    &__svg {
+        position: absolute;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        right: 28px;
+    }
+
+    &__email {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $footer-contact;
+    }
+
+    &__phone {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $footer-contact;
+    }
+
     &__input {
         border: 1px solid $footer-input;
         border-radius: 4px;
@@ -127,14 +135,6 @@
         box-shadow: $input-shadow;
         background: $footer-input;
         padding-left: 16px;
-    }
-
-    &__send {
-        margin-left: 93px;
-    }
-
-    &__icons {
-        margin-left: 70px
     }
 
     &__join {
