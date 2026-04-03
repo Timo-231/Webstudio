@@ -1,27 +1,35 @@
 @use "../base/variable" as *;
 
-.portfolio-buttons {
+.buttons {
     padding-top: 94px;
-}
 
-.portfolio-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-}
+    &__container {
+        width: 1170px;
+    }
 
-.portfolio-button {
-    border-radius: 4px;
-    width: 112px;
-    height: 38px;
-    transition-property: box-shadow, background, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
 
-.portfolio-button:hover {
-    box-shadow: $portfolio-buttonh;
-    background: $accent-color;
-    color: $main-color;
-}    
+    &__item {
+        max-width: 130px;
+        height: 38px;
+    }
+
+    &__button {
+        border-radius: 4px;
+        width: 112px;
+        height: 38px;
+        transition-property: box-shadow, background, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button:hover {
+        box-shadow: $portfolio-buttonh;
+        background: $accent-color;
+        color: $main-color;
+    }
+}

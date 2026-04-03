@@ -22,42 +22,45 @@
                 <span class="header__web">Web</span><span class="header__studio">Studio</span></a>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="./index.html" class="header__link header__studio-s">Студiя</a>
+                    <li class="header__item"><a href="./index.html" class="header__link header__studio-p">Студiя</a>
                     </li>
-                    <li class="header__item"><a href="./portfolio.html" class="header-link header__portfolio-s">Портфолiо</a>
+                    <li class="header__item"><a href="./portfolio.html"
+                            class="header-link header__portfolio-p">Портфолiо</a>
                     </li>
                     <li class="header__item"><a href="" class="header-link header__contacts-s">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="header__contakts">
-                <li class="header__contakt">
-                    <svg class="header__icons">
-                        <use href="./img/symbol-defs.svg#icon-email"></use>
-                    </svg>
-                </li>
-                <li><a href="mailto:info@devstudio.com" class="header__email">info@devstudio.com</a></li>
-            </ul>
-            <ul class="header__telefon">
-                <li class="header__contact">
-                    <svg class="header__icon">
-                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                </li>
-                <li><a href="tel:+380961111111" class="header__phone">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            <div class="header__contain">
+                <ul class="header__contakts">
+                    <li class="header__contakt">
+                        <svg class="header__icons">
+                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </li>
+                    <li class="header__post"><a href="mailto:info@devstudio.com" class="header__email">info@devstudio.com</a></li>
+                </ul>
+                <ul class="header__telefon">
+                    <li class="header__contact">
+                        <svg class="header__icon">
+                            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                    </li>
+                    <li><a href="tel:+380961111111" class="header__phone">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <!-- portoflio buttons -->
-        <section class="portfolio-buttons">
-            <div class="container portfolio__container">
-                <ul class="portfolio__list">
-                    <li class="portofolio__item"><button type="submit" class="portfolio__button">Усі</button></li>
-                    <li class="portofolio__item"><button type="submit" class="portfolio__button">Веб-сайти</button></li>
-                    <li class="portofolio__item"><button type="submit" class="portfolio__button">Додатки</button></li>
-                    <li class="portofolio__item"><button type="submit" class="portfolio__button">Дизайн</button></li>
-                    <li class="portofolio__item"><button type="submit" class="portfolio__button">Маркетинг</button></li>
+        <section class="buttons">
+            <div class="container buttons__container">
+                <ul class="buttons__list">
+                    <li class="buttons__item"><button type="submit" class="buttons__button">Усі</button></li>
+                    <li class="buttons__item"><button type="submit" class="buttons__button">Веб-сайти</button></li>
+                    <li class="buttons__item"><button type="submit" class="buttons__button">Додатки</button></li>
+                    <li class="buttons__item"><button type="submit" class="buttons__button">Дизайн</button></li>
+                    <li class="buttons__item"><button type="submit" class="buttons__button">Маркетинг</button></li>
                 </ul>
             </div>
         </section>
@@ -79,80 +82,88 @@
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/basketball.webp" alt="basketball" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/basketball.webp" alt="basketball" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Постер New Orlean vs Golden Star</h3>
                         <p class="cards__subtext">Дизайн</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/fish.webp" alt="fish" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/fish.webp" alt="fish" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Ресторан Seafood</h3>
                         <p class="cards__subtext">Додаток</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/headphones.webp" alt="headphones" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/headphones.webp" alt="headphones" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Проєкт Prime</h3>
                         <p class="cards__subtext">Маркетинг</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/boxes.webp" alt="boxes" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/boxes.webp" alt="boxes" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Проєкт Boxes</h3>
                         <p class="cards__subtext">Додаток</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/pc.webp" alt="pc" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/pc.webp" alt="pc" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Inspiration has no Borders</h3>
                         <p class="cards__subtext">Веб-сайт</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/book.webp" alt="book" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/book.webp" alt="book" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Видання Limited Edition</h3>
                         <p class="cards__subtext">Дизайн</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/birka.webp" alt="birka" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/birka.webp" alt="birka" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Проєкт LAB</h3>
                         <p class="cards__subtext">Маркетинг</p>
                     </li>
                     <li class="cards__item">
                         <div class="cards__info">
-                        <img src="./portfolio/laptop2.webp" alt="laptop2" class="cards__images">
-                        <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                            сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                            особу.</p>
+                            <img src="./portfolio/laptop2.webp" alt="laptop2" class="cards__images">
+                            <p class="cards__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                                приватну
+                                особу.</p>
                         </div>
                         <h3 class="cards__subtitle">Growing Business</h3>
                         <p class="cards__subtext">Додаток</p>
@@ -164,10 +175,11 @@
     </main>
     <!-- porfolio footer -->
     <footer id="foot" class="foot">
-        <div class="container">
-            <div class="foot__icons">
-                <div class="adress">
-                    <p class="foot__title"><span class="web">Web</span><span class="studio">Studio</span></p>
+        <div class="container foot__container">
+            <div class="foot__contain">
+                <div class="foot__adress">
+                    <p class="foot__title"><span class="header__web">Web</span><span class="foot__studio">Studio</span>
+                    </p>
                     <address class="foot__address">
                         м. Київ, пр-т Лесі Українки, 26
                         <a href="mailto:info@devstudio.com" class="foot__email">info@devstudio.com</a>
@@ -195,7 +207,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="foot__send">
+                <div class="foot__sends">
                     <form action="">
                         <label for="" class="foot__label">
                             <h3 class="foot__follow">Підпишіться на розсилку</h3>
