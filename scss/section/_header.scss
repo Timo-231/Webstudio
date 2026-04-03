@@ -76,6 +76,10 @@
         color: $title-color;
     }
 
+    &__portfolio-s:hover {
+        color: $accent-color;
+    }
+
     &__contacts-s {
         font-weight: 500;
         font-size: 14px;
@@ -137,6 +141,7 @@
 
     &__portfolio-s:hover::after {
         opacity: 1;
+        color: $accent-color;
     }
 
     &__studio-p::after {
@@ -177,7 +182,8 @@
         opacity: 1;
     }
 
-    &__portfolio::after {
+    &__portfolio-s::after {
+        color: $accent-color;
         content: "";
         display: block;
         position: absolute;
@@ -272,7 +278,7 @@
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.02em;
-        color: $title-color;
+        color: $accent-color;
     }
 
     &__portfolio-p::after {
@@ -302,15 +308,20 @@
 
     &__contakts {
         display: flex;
-        margin-right: 30px;
         gap: 10px;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__contakt {
-        fill: $text-color;
+    &__contakts:hover {
+        &__icons {
+            color: $accent-color;
+        }
+
+        &__email {
+            color: blue;
+        }
     }
 
     &__telefon {
@@ -352,6 +363,14 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__email:hover {
+        color: $accent-color;
+
+        &__icons {
+            background-color: blue;
+        }
     }
 
     &__phone {
