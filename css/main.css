@@ -342,7 +342,7 @@ a {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  top: 48px;
+  top: 43px;
   background-color: #2196F3;
   transition-property: opacity;
   transition-duration: 250ms;
@@ -371,7 +371,7 @@ a {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  top: 48px;
+  top: 43px;
   background-color: #2196F3;
   transition-property: opacity;
   transition-duration: 250ms;
@@ -403,7 +403,7 @@ a {
   position: absolute;
   width: 100%;
   height: 3px;
-  top: 47px;
+  top: 43px;
   background-color: #2196F3;
   opacity: 0;
   transition-property: opacity;
@@ -438,7 +438,7 @@ a {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  top: 47px;
+  top: 44px;
   background-color: #2196F3;
   opacity: 0;
   transition-property: opacity;
@@ -468,8 +468,8 @@ a {
   position: absolute;
   border-radius: 2px;
   width: 100%;
-  height: 3px;
-  top: 47px;
+  height: 4px;
+  top: 43px;
   background-color: #2196F3;
   opacity: 0;
   transition-property: opacity;
