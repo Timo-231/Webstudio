@@ -61,7 +61,10 @@
     &__icon {
         width: 20px;
         height: 20px;
-        fill: #AFB1B8;
+        fill: $client-border;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__link {
@@ -76,17 +79,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__icon {
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     &__link:hover {
-        fill: $main-color;
         background-color: $accent-color;
 
-        &__icon {
+        .team__icon {
             fill: $main-color;
         }
     }

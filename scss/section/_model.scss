@@ -1,5 +1,167 @@
 @use "../base/variable" as *;
 
+.model {
+    width: 528px;
+    background-color: $main-color;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    padding: 40px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: transparent;
+        stroke-width: 1px;
+        stroke: rgba(0, 0, 0, 0.1);
+        outline: 1px solid $text-color;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: $logo-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__btn:hover {
+        .model__icon {
+            fill: $accent-color;
+        }
+    }
+
+    &__form {
+        margin-top: 12px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $title-color;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: $text-color;
+    }
+
+    &__label {
+        position: relative;
+        width: 448px;
+        height: 58px;
+        margin-top: 4px;
+    }
+
+    &__pic {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 33px;
+        left: 5px;
+    }
+
+    &__input {
+        border: 1px solid $model-input;
+        border-radius: 4px;
+        width: 448px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+        transition-property: outline;
+        transition-duration: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    &__input:hover,
+    &__input:focus {
+        outline: 1px solid $accent-color;
+    }
+
+    &__input:hover+&__pic,
+    &__input:focus+&__pic {
+        fill: $accent-color;
+    }
+
+    &__comment {
+        width: 100%;
+        height: 120px;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: $model-comment;
+        padding-left: 16px;
+        padding-top: 12px;
+        resize: none;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__box {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-left: 7px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $text-color;
+    }
+
+    &__link {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $accent-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+    }
+
+    &__submit {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 188%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $main-color;
+        border-radius: 4px;
+        width: 200px;
+        height: 50px;
+        box-shadow: 0 4px 4px 0 $input-shadow;
+        background: $model-submit;
+    }
+}
+
 .backdrop {
     opacity: 1;
     background-color: $backdrop;
@@ -18,166 +180,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model {
-  width: 528px;
-  background-color: $main-color;
-  border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0deg);
-  padding: 40px;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden > .model {
-  transform: translate(-50%, -50%) scale(0);
-}
-
-.model-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    outline: 1px solid $footer-contact;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.model-icon {
-    width: 20px;
-    height: 20px;
-    fill: $footer-contact;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.model-btn:hover {
-    .model-icon {
-        fill: $accent-color;
-    }
-}
-
-.model-form {
-    margin-top: 12px;
-}
-
-.model-title {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $title-color;
-}
-
-.model-text {
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    color: $text-color;
-}
-
-.model-label {
-    position: relative;
-    width: 448px;
-    height: 58px;
-    margin-top: 4px;
-}
-
-.model-pic {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 33px;
-    left: 5px;
-}
-
-.model-input {
-    border: 1px solid $model-input;
-    border-radius: 4px;
-    width: 448px;
-    height: 40px;
-    margin-bottom: 10px;
-    padding-left: 42px;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.model-input:hover,
-.model-input:focus {
-    outline: 1px solid $accent-color;
-}
-
-.model-input:hover+.model-pic,
-.model-input:focus+.model-pic {
-    fill: $accent-color;
-}
-
-.model-comment {
-    width: 100%;
-    height: 120px;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    color: $model-comment;
-    padding-left: 16px;
-    padding-top: 12px;
-    resize: none;
-}
-
-.model-button {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.model-box {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.model-text {
-    margin-left: 7px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $text-color;
-}
-
-.model-link {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: $accent-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-}
-
-.model-submit {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 188%;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: $main-color;
-    border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0 4px 4px 0 $input-shadow;
-    background: $model-submit;
+.is-hidden>.model {
+    transform: translate(-50%, -50%) scale(0);
 }

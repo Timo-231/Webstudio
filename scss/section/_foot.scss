@@ -40,7 +40,7 @@
 
     &__elm {
         display: flex;
-        background-color: $footer-bg;
+        background-color: $footer-icon;
         width: 44px;
         height: 44px;
         justify-content: center;
@@ -137,7 +137,7 @@
         width: 358px;
         height: 50px;
         box-shadow: $input-shadow;
-        background: $footer-input;
+        background: transparent;
         padding-left: 16px;
     }
 
