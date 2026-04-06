@@ -900,7 +900,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.cards__subtext {
+.cards__text {
   position: absolute;
   opacity: 0;
   transform: translate(0%, 100%);
@@ -939,7 +939,7 @@ a {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #FFF;
 }
-.cards__item:hover .cards__subtext {
+.cards__item:hover .cards__text {
   opacity: 1;
   transform: translate(0%, 0%);
 }
