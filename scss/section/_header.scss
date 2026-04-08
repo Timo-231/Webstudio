@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder";
+@use "../untils/mixin" as *;
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    @extend %header-instend;
     border: 1px solid $portfolio-line;
 
     &__container {
@@ -64,9 +65,7 @@
         height: 4px;
         top: 43px;
         background-color: $accent-color;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__portfolio-s {
@@ -97,9 +96,7 @@
         height: 4px;
         top: 43px;
         background-color: $accent-color;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__contacts-s:hover {
@@ -116,9 +113,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__studio-p:hover::after {
@@ -134,9 +129,7 @@
         top: 43px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__portfolio-s:hover::after {
@@ -154,9 +147,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__studio-p:hover::after {
@@ -173,9 +164,7 @@
         top: 44px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__contacts-s:hover::after {
@@ -208,9 +197,7 @@
         top: 43px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__contacts-s:hover::after {
@@ -227,9 +214,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__studios-p:hover::after {
@@ -246,9 +231,7 @@
         top: 35px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__contacts-p:hover::after {
@@ -265,9 +248,7 @@
         top: 42px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
     }
 
     &__studio-p:hover::after {
@@ -291,9 +272,7 @@
         top: 42px;
         background-color: $accent-color;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:opacity);
         opacity: 1;
     }
 
@@ -337,25 +316,20 @@
     &__telefon {
         display: flex;
         gap: 10px;
-        transition-property: color, fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:color);
+        @include animation($property:fill);
     }
 
     &__icons {
         width: 16px;
         height: 12px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:fill);
     }
 
     &__icon {
         width: 10px;
         height: 16px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:fill);
     }
 
     &__link:hover {
@@ -370,9 +344,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:color);
     }
 
     &__email:hover {
@@ -388,9 +360,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:color);
     }
 
     &__contact {
@@ -403,9 +373,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:color);
     }
 
     &__contact {

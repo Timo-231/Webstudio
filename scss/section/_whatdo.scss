@@ -1,7 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .whatdo {
-    padding-bottom: 94px;
+    @extend %whatdo-instand;
 
     &__container {
         width: 1170px;

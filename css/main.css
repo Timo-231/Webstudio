@@ -29,10 +29,48 @@ a {
   border: none;
 }
 
-.about {
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.team, .about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 110px;
+}
+
+.foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.buttons {
+  padding-top: 94px;
+}
+
+.cards {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.whatdo {
+  padding-bottom: 94px;
+}
+
 .about__list {
   display: flex;
   flex-direction: row;
@@ -102,10 +140,6 @@ a {
   color: #757575;
 }
 
-.client {
-  padding-top: 94px;
-  padding-bottom: 110px;
-}
 .client__container {
   display: flex;
   flex-direction: column;
@@ -152,8 +186,6 @@ a {
 }
 
 .foot {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2F303A;
 }
 .foot__title {
@@ -290,8 +322,6 @@ a {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border: 1px solid #ECECEC;
 }
 .header__container {
@@ -580,7 +610,10 @@ a {
 .header__telefon {
   display: flex;
   gap: 10px;
-  transition-property: color, fill;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -661,11 +694,6 @@ a {
 }
 
 .hero {
-  justify-content: center;
-  justify-content: space-between;
-  align-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url("../img/backround.webp");
 }
 .hero__title {
@@ -775,7 +803,7 @@ a {
   margin-bottom: 10px;
   padding-left: 42px;
   transition-property: outline;
-  transition-duration: 0ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model__input:hover, .model__input:focus {
@@ -861,9 +889,6 @@ a {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.buttons {
-  padding-top: 94px;
-}
 .buttons__container {
   width: 1170px;
 }
@@ -891,11 +916,6 @@ a {
   color: #FFF;
 }
 
-.cards {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
 .cards__info {
   overflow: hidden;
   position: relative;
@@ -915,6 +935,7 @@ a {
   background: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 294px;
+  transition-property: opacity, transform;
   transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -975,8 +996,6 @@ a {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #F5F4FA;
 }
 .team__list {
@@ -1051,9 +1070,6 @@ a {
   fill: #FFF;
 }
 
-.whatdo {
-  padding-bottom: 94px;
-}
 .whatdo__container {
   width: 1170px;
   display: flex;

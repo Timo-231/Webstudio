@@ -1,4 +1,5 @@
 @use "../base/variable" as *;
+@use "../untils/mixin" as *;
 
 .model {
     width: 528px;
@@ -9,9 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
     padding: 40px;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation($property:transform);
 
     &__btn {
         width: 40px;
@@ -34,9 +33,7 @@
         width: 20px;
         height: 20px;
         fill: $logo-color;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:fill);
     }
 
     &__btn:hover {
@@ -86,9 +83,7 @@
         height: 40px;
         margin-bottom: 10px;
         padding-left: 42px;
-        transition-property: outline;
-        transition-duration: 0ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:outline);
     }
 
 

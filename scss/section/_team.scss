@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %about-instend;
     background-color: $team-bg;
 
     &__list {

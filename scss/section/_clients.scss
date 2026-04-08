@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .client {
-    padding-top: 94px;
-    padding-bottom: 110px;
+    @extend %clients-instand;
 
     &__container {
         display: flex;
@@ -33,9 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-property: outline;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:outline);
     }
 
     &__elm:hover {
@@ -50,8 +49,6 @@
         fill: $client-border;
         width: 106px;
         height: 60px;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:fill);
     }
 }

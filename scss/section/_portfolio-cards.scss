@@ -1,17 +1,13 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .cards {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    @extend %cards-instand;
 
     &__info {
         overflow: hidden;
         position: relative;
-    }
-
-    &__subtext {
-
     }
 
     &__text {
@@ -30,8 +26,7 @@
         width: 100%;
         height: 294px;
         transition-property: opacity, transform;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property: (opacity, transform));
     }
 
     &__card {
@@ -46,9 +41,7 @@
         flex-basis: calc((100% - 60px) / 3);
         background: $main-color;
         outline: solid 1px $border-card;
-        transition-property: box-shadow, background, transform, opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property: (box-shadow, background, transform, opacity));
     }
 
     &__item:hover {

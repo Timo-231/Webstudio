@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %about-instend;
 
     &__list {
         display: flex;

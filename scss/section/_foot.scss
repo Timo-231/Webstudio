@@ -1,8 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .foot {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @extend %foot-instand;
     background-color: $footer-bg;
 
     &__title {
@@ -46,9 +47,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property:background-color);
     }
 
     &__elm:hover {

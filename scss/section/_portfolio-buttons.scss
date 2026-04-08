@@ -1,7 +1,9 @@
 @use "../base/variable" as *;
+@use "../untils/placeholder" as *;
+@use "../untils/mixin" as *;
 
 .buttons {
-    padding-top: 94px;
+    @extend %buttons-instand;
 
     &__container {
         width: 1170px;
@@ -23,9 +25,7 @@
         border-radius: 4px;
         width: 112px;
         height: 38px;
-        transition-property: box-shadow, background, color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation($property: (box-shadow, background, color));
     }
 
     &__button:hover {
