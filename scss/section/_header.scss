@@ -5,6 +5,17 @@
 .header {
     @extend %header-instend;
     border: 1px solid $portfolio-line;
+    padding: 10px 0;
+
+    @media screen and (min-width:768px) {
+        .container {
+            padding: 20px 0;
+        }
+
+        .container {
+            padding: 25px 0;
+        }
+    }
 
     &__container {
         display: flex;
@@ -15,9 +26,27 @@
     &__title {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
+        letter-spacing: 0.03em;
         color: $logo-color;
+        margin-right: 276px;
+
+        @media screen and (min-width:768px) {
+            .container_title {
+                margin-right: 87px;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+            .container_title {
+                font-weight: 700;
+                font-size: 26px;
+                letter-spacing: 0.03em;
+                margin-right: 91px;
+            }
+        }
     }
+
 
     &__link {
         font-weight: 500;
@@ -38,18 +67,30 @@
         display: flex;
         flex-direction: row;
         gap: 50px;
-        margin-right: 303px;
+        margin-right: auto;
     }
 
     &__item {
-        display: flex;
+        display: none;
         position: relative;
     }
 
     &__contain {
-        display: flex;
+        display: none;
         justify-content: baseline;
         gap: 30px;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
     }
 
     &__studio-s {
@@ -65,7 +106,7 @@
         height: 4px;
         top: 43px;
         background-color: $accent-color;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__portfolio-s {
@@ -96,7 +137,7 @@
         height: 4px;
         top: 43px;
         background-color: $accent-color;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__contacts-s:hover {
@@ -113,7 +154,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__studio-p:hover::after {
@@ -129,7 +170,7 @@
         top: 43px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__portfolio-s:hover::after {
@@ -147,7 +188,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__studio-p:hover::after {
@@ -164,12 +205,14 @@
         top: 44px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__contacts-s:hover::after {
         opacity: 1;
     }
+
+    item
 
     &__portfolio-s::after {
         color: $accent-color;
@@ -197,7 +240,7 @@
         top: 43px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__contacts-s:hover::after {
@@ -214,7 +257,7 @@
         top: 45px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__studios-p:hover::after {
@@ -231,7 +274,7 @@
         top: 35px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__contacts-p:hover::after {
@@ -248,7 +291,7 @@
         top: 42px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
     }
 
     &__studio-p:hover::after {
@@ -272,17 +315,19 @@
         top: 42px;
         background-color: $accent-color;
         opacity: 0;
-        @include animation($property:opacity);
+        @include animation($property: opacity);
         opacity: 1;
     }
 
-    &__header-nav {
-        display: flex;
+    &__nav {
+        display: none;
         align-items: center;
-    }
 
-    &__list {
-        margin-left: 93px;
+        @media screen and (min-width:768px) {
+            display: flex;
+            margin-right: 96px;
+            gap: 51px;
+        }
     }
 
     &__contakts {
@@ -316,20 +361,20 @@
     &__telefon {
         display: flex;
         gap: 10px;
-        @include animation($property:color);
-        @include animation($property:fill);
+        @include animation($property: color);
+        @include animation($property: fill);
     }
 
     &__icons {
         width: 16px;
         height: 12px;
-        @include animation($property:fill);
+        @include animation($property: fill);
     }
 
     &__icon {
         width: 10px;
         height: 16px;
-        @include animation($property:fill);
+        @include animation($property: fill);
     }
 
     &__link:hover {
@@ -344,7 +389,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        @include animation($property:color);
+        @include animation($property: color);
     }
 
     &__email:hover {
@@ -360,7 +405,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        @include animation($property:color);
+        @include animation($property: color);
     }
 
     &__contact {
@@ -373,7 +418,7 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: $text-color;
-        @include animation($property:color);
+        @include animation($property: color);
     }
 
     &__contact {
