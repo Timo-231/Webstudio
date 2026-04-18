@@ -2,7 +2,6 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: solid 1px red;
 }
 
 @media screen and (min-width: 480px) {
@@ -1063,8 +1062,13 @@ a {
 .buttons__list {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   gap: 8px;
-  flex-wrap: calc((100% - 20px) / 5);
+}
+@media screen and (min-width: 768px) {
+  .buttons__list {
+    justify-content: center;
+  }
 }
 .buttons__item {
   max-width: 130px;
@@ -1111,18 +1115,24 @@ a {
 }
 .cards__card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+  align-items: center;
 }
 .cards__item {
   animation-name: zoom;
-  flex-basis: calc((100% - 60px) / 3);
+  width: 450px;
   background: #FFF;
   outline: solid 1px #EEE;
   transition-property: box-shadow, background, transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: 354;
+  }
 }
 .cards__item:hover {
   flex-basis: calc((100% - 60px) / 3);

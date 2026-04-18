@@ -31,17 +31,22 @@
 
     &__card {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
         gap: 30px;
+        align-items: center;
     }
 
     &__item {
         animation-name: zoom;
-        flex-basis: calc((100% - 60px) / 3);
+        width: 450px;
         background: $main-color;
         outline: solid 1px $border-card;
         @include animation($property: (box-shadow, background, transform, opacity));
+
+        @media screen and (min-width:768px) {
+            width: 354;
+        }
     }
 
     &__item:hover {
