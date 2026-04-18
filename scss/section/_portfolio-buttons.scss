@@ -11,8 +11,9 @@
 
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 8px;
+        flex-wrap: calc((100% - 20px) / 5);
     }
 
     &__item {

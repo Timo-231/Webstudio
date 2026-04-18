@@ -29,21 +29,20 @@
         font-size: 24px;
         letter-spacing: 0.03em;
         color: $logo-color;
-        margin-right: 276px;
+        margin-right: 91px;
+
+        @media screen and (min-width:480px) {
+                margin-right: auto;
+        }
 
         @media screen and (min-width:768px) {
-            .container_title {
                 margin-right: 87px;
-            }
         }
 
         @media screen and (min-width:1200px) {
-            .container_title {
                 font-weight: 700;
                 font-size: 26px;
                 letter-spacing: 0.03em;
-                margin-right: 91px;
-            }
         }
     }
 
@@ -73,6 +72,10 @@
     &__item {
         display: none;
         position: relative;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
     }
 
     &__contain {
@@ -83,6 +86,7 @@
         @media screen and (min-width:768px) {
             display: flex;
             flex-direction: column;
+            align-items: baseline;
             gap: 10px;
         }
         
@@ -212,8 +216,6 @@
         opacity: 1;
     }
 
-    item
-
     &__portfolio-s::after {
         color: $accent-color;
         content: "";
@@ -325,7 +327,7 @@
 
         @media screen and (min-width:768px) {
             display: flex;
-            margin-right: 96px;
+            margin-right: auto;
             gap: 51px;
         }
     }

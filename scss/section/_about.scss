@@ -4,26 +4,51 @@
 
 .about {
     @extend %about-instend;
+    padding-top: 0 60px;
+
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
+
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+    }
 
     &__list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 30px;
+
+        @media screen and (min-width:768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__subtitle {
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
         color: $title-color;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media screen and (min-width:768px) {
+            text-align: left;
+        }
     }
 
     &__uvaha::before {
         content: "";
         display: block;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-image: url("../../img/antenna1.png");
         align-items: center;
@@ -31,12 +56,20 @@
         background-color: $team-bg;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 
     &__punktualnist::before {
         content: "";
         display: block;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-image: url("../../img/clock1.png");
         align-items: center;
@@ -44,12 +77,20 @@
         background-color: $team-bg;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 
     &__plan::before {
         content: "";
         display: block;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-image: url("../../img/diagram1.png");
         align-items: center;
@@ -57,12 +98,20 @@
         background-color: $team-bg;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 
     &__technik::before {
         content: "";
         display: block;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-image: url("../../img/astronaut1.png");
         align-items: center;
@@ -70,6 +119,14 @@
         background-color: $team-bg;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 
     &__subtext {
@@ -77,6 +134,15 @@
         font-size: 14px;
         line-height: 171%;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $text-color;
+        width: 100%;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 }

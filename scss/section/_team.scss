@@ -8,18 +8,31 @@
 
     &__list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 30px;
         margin-top: 50px;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
         display: flex;
-        width: 270px;
+        width: 450px;
         flex-direction: column;
         background-color: $main-color;
         box-shadow: $team-item-bs;
         border-radius: 0 0 4px 4px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 
     &__title {

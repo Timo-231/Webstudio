@@ -3,7 +3,12 @@
 @use "../untils/mixin" as *;
 
 .whatdo {
+    display: none;
     @extend %whatdo-instand;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 
     &__container {
         width: 1170px;

@@ -12,7 +12,7 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -92,23 +92,54 @@ a {
   padding-bottom: 94px;
 }
 
+.about {
+  padding-top: 0 60px;
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+  }
+}
 .about__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .about__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    flex-wrap: nowrap;
+  }
+}
 .about__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .about__subtitle {
+    text-align: left;
+  }
 }
 .about__uvaha::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-image: url("../../img/antenna1.png");
   align-items: center;
@@ -117,10 +148,20 @@ a {
   background-position: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .about__uvaha::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__uvaha::before {
+    width: 270px;
+  }
+}
 .about__punktualnist::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-image: url("../../img/clock1.png");
   align-items: center;
@@ -129,10 +170,20 @@ a {
   background-position: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .about__punktualnist::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__punktualnist::before {
+    width: 270px;
+  }
+}
 .about__plan::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-image: url("../../img/diagram1.png");
   align-items: center;
@@ -141,10 +192,20 @@ a {
   background-position: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .about__plan::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__plan::before {
+    width: 270px;
+  }
+}
 .about__technik::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-image: url("../../img/astronaut1.png");
   align-items: center;
@@ -153,12 +214,33 @@ a {
   background-position: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .about__technik::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__technik::before {
+    width: 270px;
+  }
+}
 .about__subtext {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about__subtext {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__subtext {
+    width: 270px;
+  }
 }
 
 .client__container {
@@ -175,6 +257,7 @@ a {
 }
 .client__elmts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
@@ -182,7 +265,7 @@ a {
 .client__elm {
   outline: solid 1px #AFB1B8;
   border-radius: 5px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -190,6 +273,18 @@ a {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .client__elm {
+    flex-wrap: wrap;
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__elm {
+    flex-wrap: nowrap;
+    width: 170px;
+  }
 }
 .client__elm:hover {
   outline: solid 1px #2196F3;
@@ -365,19 +460,23 @@ a {
   font-size: 24px;
   letter-spacing: 0.03em;
   color: #000;
-  margin-right: 276px;
+  margin-right: 91px;
+}
+@media screen and (min-width: 480px) {
+  .header__title {
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
-  .header__title .container_title {
+  .header__title {
     margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__title .container_title {
+  .header__title {
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-    margin-right: 91px;
   }
 }
 .header__link {
@@ -402,6 +501,11 @@ a {
   display: none;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .header__item {
+    display: flex;
+  }
+}
 .header__contain {
   display: none;
   justify-content: baseline;
@@ -411,6 +515,7 @@ a {
   .header__contain {
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     gap: 10px;
   }
 }
@@ -537,7 +642,7 @@ a {
 .header__contacts-s:hover::after {
   opacity: 1;
 }
-item .header__portfolio-s::after {
+.header__portfolio-s::after {
   color: #2196F3;
   content: "";
   display: block;
@@ -647,7 +752,7 @@ item .header__portfolio-s::after {
 @media screen and (min-width: 768px) {
   .header__nav {
     display: flex;
-    margin-right: 96px;
+    margin-right: auto;
     gap: 51px;
   }
 }
@@ -957,8 +1062,9 @@ item .header__portfolio-s::after {
 }
 .buttons__list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 8px;
+  flex-wrap: calc((100% - 20px) / 5);
 }
 .buttons__item {
   max-width: 130px;
@@ -1063,17 +1169,33 @@ item .header__portfolio-s::after {
 }
 .team__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
   margin-top: 50px;
 }
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .team__item {
   display: flex;
-  width: 270px;
+  width: 450px;
   flex-direction: column;
   background-color: #FFF;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 .team__title {
   font-weight: 700;
@@ -1133,6 +1255,14 @@ item .header__portfolio-s::after {
   fill: #FFF;
 }
 
+.whatdo {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .whatdo {
+    display: flex;
+  }
+}
 .whatdo__container {
   width: 1170px;
   display: flex;
