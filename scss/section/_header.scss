@@ -8,19 +8,21 @@
     padding: 10px 0;
 
     @media screen and (min-width:768px) {
-        .container {
             padding: 20px 0;
         }
 
-        .container {
-            padding: 25px 0;
-        }
+    @media screen and (min-width:1200px) {
+        padding: 25px 0;
     }
 
     &__container {
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        
+        @media screen and (min-width:768px) {
+            align-items: center;
+        }
     }
 
     &__title {
