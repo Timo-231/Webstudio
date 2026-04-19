@@ -3,7 +3,7 @@
 @use "../untils/mixin" as *;
 
 .client {
-    @extend %clients-instand;
+    @extend %about-instend;
 
     &__container {
         display: flex;

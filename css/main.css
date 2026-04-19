@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: solid 1px red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -50,18 +51,31 @@ a {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
-.team, .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team, .client, .about {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-.client {
-  padding-top: 94px;
-  padding-bottom: 110px;
+@media screen and (min-width: 1200px) {
+  .team, .client, .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .foot {
@@ -70,11 +84,17 @@ a {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   justify-content: center;
   justify-content: space-between;
   align-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .buttons {
@@ -140,7 +160,7 @@ a {
   display: block;
   width: 450px;
   height: 120px;
-  background-image: url("../../img/antenna1.png");
+  background-image: url("../img/antenna1.png");
   align-items: center;
   background-repeat: no-repeat;
   background-color: #F5F4FA;
@@ -162,7 +182,7 @@ a {
   display: block;
   width: 450px;
   height: 120px;
-  background-image: url("../../img/clock1.png");
+  background-image: url("../img/clock1.png");
   align-items: center;
   background-repeat: no-repeat;
   background-color: #F5F4FA;
@@ -184,7 +204,7 @@ a {
   display: block;
   width: 450px;
   height: 120px;
-  background-image: url("../../img/diagram1.png");
+  background-image: url("../img/diagram1.png");
   align-items: center;
   background-repeat: no-repeat;
   background-color: #F5F4FA;
@@ -206,7 +226,7 @@ a {
   display: block;
   width: 450px;
   height: 120px;
-  background-image: url("../../img/astronaut1.png");
+  background-image: url("../img/astronaut1.png");
   align-items: center;
   background-repeat: no-repeat;
   background-color: #F5F4FA;
@@ -438,7 +458,6 @@ a {
 
 .header {
   border: 1px solid #ECECEC;
-  padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -521,7 +540,7 @@ a {
   .header__contain {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: start;
     gap: 10px;
   }
 }
@@ -530,6 +549,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    align-items: center;
   }
 }
 .header__studio-s {
@@ -872,14 +892,25 @@ a {
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
+  font-size: 26px;
+  line-height: 162%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: #FFF;
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    line-height: 162%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 .hero__container {
   display: flex;

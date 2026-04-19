@@ -8,14 +8,25 @@
 
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 136%;
+        font-size: 26px;
+        line-height: 162%;
+        // font-size: 44px;
+        // line-height: 136%;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
         color: $main-color;
-        max-width: 696px;
+        max-width: 360px;
         margin-bottom: 30px;
+        
+        @media screen and (min-width:768px) {
+            line-height: 162%;
+        }
+        
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+            max-width: 696px;
+        }
     }
 
     &__container {
