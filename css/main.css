@@ -327,6 +327,12 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__title {
+    text-align: start;
+  }
 }
 .foot__studio {
   color: white;
@@ -337,16 +343,39 @@ a {
   gap: 9px;
   margin-top: 20px;
   font-style: normal;
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #FFF;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__address {
+    text-align: start;
+  }
 }
 .foot__contain {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .foot__contain {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__contain {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }
 .foot__elmnts {
   display: flex;
@@ -371,20 +400,55 @@ a {
   display: flex;
 }
 .foot__send {
-  margin-left: 93px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .foot__send {
+    align-items: start;
+    flex-direction: row;
+  }
 }
 .foot__icons {
-  margin-left: 70px;
-}
-.foot__send {
   display: flex;
-  margin-top: 20px;
-  gap: 12px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.foot__label {
+@media screen and (min-width: 768px) {
+  .foot__icons {
+    margin-left: 165px;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__icons {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+.foot__sends {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .foot__sends {
+    flex-wrap: nowrap;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot__sends {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 }
 .foot__follow {
   display: block;
@@ -409,6 +473,17 @@ a {
   position: relative;
   text-align: justify;
   padding-left: 28px;
+}
+.foot__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .foot__label {
+    align-items: start;
+  }
 }
 .foot__svg {
   position: absolute;
