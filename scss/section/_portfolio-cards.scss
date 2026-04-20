@@ -32,25 +32,37 @@
     &__card {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 30px;
-        align-items: center;
+        align-items: start;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__item {
         animation-name: zoom;
-        width: 450px;
+        width: 100%;
         background: $main-color;
         outline: solid 1px $border-card;
         @include animation($property: (box-shadow, background, transform, opacity));
 
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
         @media screen and (min-width:768px) {
-            width: 354;
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 370px;
         }
     }
 
     &__item:hover {
-        flex-basis: calc((100% - 60px) / 3);
         box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
             0 4px 4px 0 rgba(0, 0, 0, 0.06),
             0 1px 1px 0 rgba(0, 0, 0, 0.12);

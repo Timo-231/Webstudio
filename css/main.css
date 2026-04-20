@@ -1196,17 +1196,22 @@ a {
 }
 
 .buttons__container {
-  width: 1170px;
+  display: flex;
+  flex-direction: column;
 }
 .buttons__list {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
+  width: 380px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .buttons__list {
+    width: 100%;
     justify-content: center;
+    align-items: center;
   }
 }
 .buttons__item {
@@ -1255,26 +1260,41 @@ a {
 .cards__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
+  align-items: start;
+}
+@media screen and (min-width: 768px) {
+  .cards__card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .cards__item {
   animation-name: zoom;
-  width: 450px;
+  width: 100%;
   background: #FFF;
   outline: solid 1px #EEE;
   transition-property: box-shadow, background, transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .cards__item {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .cards__item {
-    width: 354;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: 370px;
   }
 }
 .cards__item:hover {
-  flex-basis: calc((100% - 60px) / 3);
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #FFF;
 }
