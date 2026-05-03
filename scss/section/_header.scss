@@ -42,11 +42,7 @@
         font-size: 24px;
         letter-spacing: 0.03em;
         color: $logo-color;
-        margin-right: 91px;
-
-        @media screen and (min-width:480px) {
-                margin-right: auto;
-        }
+        margin-right: auto;
 
         @media screen and (min-width:768px) {
                 margin-right: 87px;
