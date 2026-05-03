@@ -21,6 +21,7 @@
         
         @media screen and (min-width:768px) {
             align-items: center;
+            justify-content: center;
         }
     }
 
@@ -94,6 +95,14 @@
         flex-direction: row;
         gap: 50px;
         margin-right: auto;
+
+        @media screen and (min-width:768px) {
+            margin-right: 90px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 315px;
+        }
     }
 
     &__item {
@@ -350,13 +359,12 @@
     }
 
     &__nav {
-        display: none;
+        display: flex;
         align-items: center;
 
         @media screen and (min-width:768px) {
             display: flex;
             margin-right: auto;
-            gap: 51px;
         }
     }
 
@@ -398,13 +406,13 @@
     &__icons {
         width: 16px;
         height: 12px;
-        @include animation($property: fill);
+        fill: $text-color;
     }
 
     &__icon {
         width: 10px;
         height: 16px;
-        @include animation($property: fill);
+        fill: $text-color;
     }
 
     &__link:hover {
