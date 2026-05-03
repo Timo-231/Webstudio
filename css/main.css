@@ -391,9 +391,14 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .client__elm {
+    width: 210px;
+    flex-wrap: 50%;
+  }
+}
 @media screen and (min-width: 768px) {
   .client__elm {
-    flex-wrap: wrap;
     width: 226px;
   }
 }
@@ -1305,7 +1310,7 @@ a {
   justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
-  width: 380px;
+  width: 100%;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
