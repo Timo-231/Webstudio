@@ -9,6 +9,8 @@
     width: 100%;
     height: 100%;
     background-color: white;
+    z-index: 1;
+    scrollbar-width: none;
 
     &__btn {
         position: absolute;
