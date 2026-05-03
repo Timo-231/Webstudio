@@ -17,11 +17,22 @@
     &__container {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items: center;
         
         @media screen and (min-width:768px) {
             align-items: center;
         }
+    }
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+    }
+
+    &__svg {
+        width: 40px;
+        height: 40px;
     }
 
     &__title {
