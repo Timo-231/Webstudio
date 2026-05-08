@@ -30,16 +30,17 @@
     &__elm {
         outline: solid 1px $client-border;
         border-radius: 5px;
-        width: 210px;
+        width: 100%;
         height: 92px;
+        flex-basis: calc(100% / 2);
         display: flex;
         justify-content: center;
         align-items: center;
         @include animation($property:outline);
 
         @media screen and (min-width:480px) {
+            flex-basis: auto;
             width: 210px;
-            flex-wrap: calc((100% / 2));
         }
 
         @media screen and (min-width:768px) {
