@@ -90,15 +90,6 @@
         display: flex;
         flex-direction: row;
         gap: 50px;
-        margin-right: auto;
-
-        @media screen and (min-width:768px) {
-            margin-right: 90px;
-        }
-
-        @media screen and (min-width:1200px) {
-            margin-right: 315px;
-        }
     }
 
     &__item {
@@ -120,6 +111,7 @@
             flex-direction: column;
             align-items: start;
             gap: 10px;
+            margin-left: 90px;
         }
         
         @media screen and (min-width:1200px) {
@@ -127,6 +119,7 @@
             flex-direction: row;
             gap: 30px;
             align-items: center;
+            margin-left: 300px;
         }
     }
 

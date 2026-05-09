@@ -732,17 +732,6 @@ a {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    margin-right: 90px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__list {
-    margin-right: 315px;
-  }
 }
 .header__item {
   display: none;
@@ -764,6 +753,7 @@ a {
     flex-direction: column;
     align-items: start;
     gap: 10px;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -772,6 +762,7 @@ a {
     flex-direction: row;
     gap: 30px;
     align-items: center;
+    margin-left: 300px;
   }
 }
 .header__studio-s {
