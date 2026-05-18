@@ -7,7 +7,7 @@
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../img/mobile/imghero-mobile@1x.webp);
+        url(../img/mobile/imghero-mobile@1x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/mobile/imghero-mobile@2x.webp);
+            url(../img/mobile/imghero-mobile@2x.webp);
 
 
     }
@@ -27,14 +27,14 @@
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/tablet/imghero-tablet@1x.webp);
+            url(../img/tablet/imghero-tablet@1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../img/tablet/imghero-tablet@1x.webp);
+                url(../img/tablet/imghero-tablet@1x.webp);
         }
     }
 
@@ -43,14 +43,14 @@
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../img/desktop/imghero-desktop@1x.webp);
+            url(../img/desktop/imghero-desktop@1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../img/desktop/imghero-desktop@2x.webp);
+                url(../img/desktop/imghero-desktop@2x.webp);
         }
 
         &__title {
